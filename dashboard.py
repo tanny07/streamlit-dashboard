@@ -45,7 +45,7 @@ selected = option_menu(None, ["Home", "Analysis"],
 
 if selected == 'Home':
     st.markdown("<h2 style='text-align: center; color: grey;margin-bottom:5%'>ABOUT THE DASHBOARD</h1>", unsafe_allow_html=True)
-    st.markdown("<div style ='display:block;background:#8080801c;padding: 25px 15px 25px 15px 25px;'><ul><li>The dashboard is created using Python and Streamlit</li><li>The dashboard consists of analysis on the Breast Cancer Disease dataset from the Sklearn library</li><li>The analysis consists of 4 charts to determine further predictions</li><li>Anyone can change the configurations of the charts using the dropdown button to check various results of the charts</li></ul>Github link of the project : https://github.com/tanny07/streamlit-dashboard</li></ul></div>", unsafe_allow_html=True)
+    st.markdown("<div style ='display:block;background:#8080801c;padding: 25px 15px 25px 15px 25px;'><ul><li>The dashboard is created using Python and Streamlit</li><li>The dashboard consists of analysis on the Breast Cancer Disease dataset from the Sklearn library</li><li>Anyone can change the configurations of the charts using the dropdown button to check various results of the charts</li></li>Github link of the project : https://github.com/tanny07/streamlit-dashboard</li></li></div>", unsafe_allow_html=True)
     st.markdown("<h6 style='margin-top:5%'><strong>Created by</strong> : Tanmay MONDKAR </h6>", unsafe_allow_html=True)
 #    st.markdown("<h6><strong>Contributor</strong> :Tanmay MONDKAR</h6>", unsafe_allow_html=True)
 
