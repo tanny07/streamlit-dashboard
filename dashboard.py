@@ -3,10 +3,10 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import webbrowser
 import matplotlib.pyplot as plt
 from sklearn import datasets
 from streamlit_option_menu import option_menu
+from bokeh.models.widgets import Div
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -48,10 +48,14 @@ if selected == 'Home':
     st.markdown("<h2 style='text-align: center; color: grey;margin-bottom:5%'>ABOUT THE DASHBOARD</h1>", unsafe_allow_html=True)
     st.markdown("<div style ='display:block;background:#8080801c;padding: 25px 15px 25px 15px;'><ul><li>The dashboard is created using Python and Streamlit</li><li>The dashboard consists of analysis on the Breast Cancer Disease dataset from the Sklearn library</li><li>There are 4 charts for further analysis</li><li>Anyone can change the configurations of the charts using the dropdown button to check various results of the charts</li></li></div>", unsafe_allow_html=True)
     st.markdown("<h6 style='margin-top:5%'><strong>Created by</strong> : Tanmay MONDKAR </h6>", unsafe_allow_html=True)
-        
-    url = 'https://github.com/tanny07/streamlit-dashboard'
+    
+    
     if st.button('Github Link'):
-        webbrowser.open_new_tab(url)
+        js = "window.open('https://github.com/tanny07/streamlit-dashboard')"  # New tab or window
+        js = "window.location.href = 'https://tanny07-streamlit-dashboard-dashboard-tanny-y6gu34.streamlitapp.com/'"  # Current tab
+        html = '<img src onerror="{}">'.format(js)
+        div = Div(text=html)
+        st.bokeh_chart(div)
   
 
 
