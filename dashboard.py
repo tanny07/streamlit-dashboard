@@ -52,7 +52,7 @@ if selected == 'Home':
     
     if st.button('Github Link'):
         js = "window.open('https://github.com/tanny07/streamlit-dashboard')"  # New tab or window
-        js = "window.location.href = 'https://tanny07-streamlit-dashboard-dashboard-tanny-y6gu34.streamlitapp.com/'"  # Current tab
+ #      js = "window.location.href = 'https://tanny07-streamlit-dashboard-dashboard-tanny-y6gu34.streamlitapp.com/'"  # Current tab
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
