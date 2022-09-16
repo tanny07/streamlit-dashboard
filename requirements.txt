@@ -1,5 +1,6 @@
 streamlit==1.12.0
 streamlit-option-menu
+webbrowser
 pandas==1.4.2
 matplotlib==3.5.3
 scikit-learn==1.1.2
