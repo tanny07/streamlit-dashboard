@@ -40,8 +40,6 @@ selected = option_menu(None, ["Home", "Analysis"],
                        icons=['house', 'command'],
                        menu_icon="cast", default_index=0, orientation="horizontal")
 
-
-
 # HOME PAGE                       
 
 if selected == 'Home':
@@ -49,19 +47,7 @@ if selected == 'Home':
     st.markdown("<div style ='display:block;background:#8080801c;padding: 25px 15px 25px 15px;'><ul><li>The dashboard is created using Python and Streamlit</li><li>The dashboard consists of analysis on the Breast Cancer Disease dataset from the Sklearn library</li><li>There are 4 charts for further analysis</li><li>Anyone can change the configurations of the charts using the dropdown button to check various results of the charts</li></li></div>", unsafe_allow_html=True)
     st.markdown("<h6 style='margin-top:5%'><strong>Created by</strong> : Tanmay MONDKAR </h6>", unsafe_allow_html=True)
     st.markdown("<h7 style='margin-top:5%'><strong>Github Link</strong> : [link](https://github.com/tanny07/streamlit-dashboard)</h6>", unsafe_allow_html=True)
-    st.info('''
-            - ###### OPEN PROJECT : [link](https://github.com/tanny07/streamlit-dashboard)
-            ''')
     
-    
-    if st.button('Github Link'):
-        js = "window.open('https://github.com/tanny07/streamlit-dashboard')" 
-        html = '<img src onerror="{}">'.format(js)
-        div = Div(text=html)
-        st.bokeh_chart(div)
-  
-
-
 # ANALYZED CHARTS PAGE
 
 def analyzed_charts():
@@ -138,9 +124,6 @@ def analyzed_charts():
                                     gridsize=25,
                                     #cmap="Greens",
                                     ax=hexbin_ax, title="Concentration of Measurements",color='yellow');
-
-
-
 
 # CHARTS LAYOUT
 
